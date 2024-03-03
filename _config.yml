@@ -12,7 +12,7 @@ title                    : "Aimene Gouasmi"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "PhD student"
-url                      :  https://aimenegouasmi/agouasmi.github.io #https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      :  "https://aimenegouasmi/agouasmi.github.io" #https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aimenegouasmi/agouasmi.github.io" #"academicpages/academicpages.github.io"
 
