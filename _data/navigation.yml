@@ -4,11 +4,11 @@ main:
     #url: /publications/
     url: https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=0V5NbOIAAAAJ
 
-  - title: "Talks"
-    url: /talks/    
+  #- title: "Talks"
+   # url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  #- title: "Teaching"
+   # url: /teaching/    
     
   #- title: "Portfolio"
    # url: /portfolio/
