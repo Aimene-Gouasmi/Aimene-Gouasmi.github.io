@@ -12,7 +12,7 @@ title                    : "Aimene Gouasmi"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "PhD student"
-url                      : https://aimenegouasmi.github.io/AimeneGouasmi/ # the base hostname & protocol for your site e.g. "https://aimenegouasmi/agouasmi.github.io" or "https://mmistakes.github.io"
+url                      : https://aimenegouasmi.github.io/AimeneGouasmi.github.io/ # the base hostname & protocol for your site e.g. "https://aimenegouasmi/agouasmi.github.io" or "https://mmistakes.github.io"
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "aimenegouasmi/agouasmi.github.io" #"academicpages/academicpages.github.io"
 
@@ -28,7 +28,7 @@ author:
   location         : "Pau, France"
   employer         : "University of Pau"
   uri              : # URL
-  email            : "agouasmi@gmail.com" 
+  email            : "agouasmi@univ-pau.fr" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
