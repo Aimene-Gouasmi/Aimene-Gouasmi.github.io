@@ -1,3 +1,5 @@
+classes: cv-style
+
 ---
 layout: archive
 title: "Publications"
