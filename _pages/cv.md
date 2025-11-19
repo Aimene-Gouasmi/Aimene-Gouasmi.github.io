@@ -1,4 +1,3 @@
-classes: cv-style
 
 ---
 layout: archive
@@ -7,6 +6,7 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+classes: cv-style
 ---
 
 {% include base_path %}
