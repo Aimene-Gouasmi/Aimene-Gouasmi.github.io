@@ -39,3 +39,57 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* ===========================
+   Personnalisation Aimene
+   =========================== */
+
+/* Couleur de fond globale */
+body {
+  background: #f3f4f6; /* gris clair */
+}
+
+/* Conteneur principal */
+#main {
+  max-width: 1100px;
+  margin-top: 3rem;
+}
+
+/* Carte autour du contenu de la page */
+.page {
+  background: transparent; /* on enlève le fond blanc brut */
+}
+
+.page__inner-wrap {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 2.5rem 2.2rem 3rem;
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e5e7eb;
+}
+
+/* Titre de ta thèse plus mis en valeur */
+.page__title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Colonne de gauche (profil) un peu plus moderne */
+.sidebar {
+  background: transparent;
+}
+
+.author__avatar img {
+  border-radius: 9999px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.25);
+}
+
+/* Liens un peu plus visibles */
+a {
+  color: #0f766e;
+}
+
+a:hover {
+  color: #0891b2;
+}
