@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Aimene Gouasmi – Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/banner.css">
+  <meta name="description"
+    content="Personal website of Aimene Gouasmi, PhD in Applied Mathematics and Teaching Assistant at the University of Pau. Research in numerical analysis of PDEs.">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="left-icons">
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/agouasmi/" target="_blank" class="icon">
+        <img src="../assets/icons/Linkedin.svg" alt="LinkedIn">
+      </a>
+
+      <!-- ResearchGate -->
+      <a href="https://www.researchgate.net/profile/Aimene-Gouasmi" target="_blank" class="icon">
+        <img src="../assets/icons/Researchgate.svg" alt="ResearchGate">
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/Aimene-Gouasmi" target="_blank" class="icon">
+        <img src="../assets/icons/Github.svg" alt="GitHub">
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:aimene.gouasmi@univ-pau.fr" class="icon"><img src="../assets/icons/Email.svg" alt="Email"></a>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
+
+    <div class="right-search">
+
+      <!-- language switch -->
+      <button class="lang-btn" type="button" onclick="switchLang()">
+        FR
+      </button>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- Background -->
+  <div class="bg-stripes">
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+  </div>
+
+
+
+  <!-- Main Card -->
+  <div class="main-card">
+    <div class="photo-box">
+      <img src="../Aimene.jpeg" alt="Aimene Gouasmi">
+    </div>
+
+    <h1>Aimene Gouasmi</h1>
+    <h3>PhD in Applied Mathematics</h3>
+
+
+
+    <p>
+      I am currently an ATER (Teaching Assistant) at the University of Pau (UPPA).
+      My research focuses on :
+    </p>
+    <div class="research-tags">
+      <span class="tag">Numerical analysis of PDEs</span>
+      <span class="tag">Finite element methods</span>
+      <span class="tag">Interface problems</span>
+      <span class="tag">Flux reconstruction</span>
+      <span class="tag">A posteriori error estimation</span>
+      <span class="tag">Adaptive mesh refinement</span>
+      <span class="tag">CutFEM</span>
+      <span class="tag">Immersed finite element methods</span>
+    </div>
+
+    <a class="contact-btn" href="mailto:aimene.gouasmi@univ-pau.fr">
+      ✉️ Contact me
+    </a>
+  </div>
+
+  <!-- Feature Grid -->
+  <div class="feature-grid">
+    <!-- BLOCK 1 : Alumni interview -->
+    <a class="feature-item"
+      href="https://alumni.univ-pau.fr/fr/article/aimene-gouasmi-attache-temporaire-d-enseignement-et-de-recherche-ater-a-l-uppa-alumni-edene-cohort-1/09/09/2025/376"
+      target="_blank">
+      <img src="../assets/images/alumni_interview.png" alt="University Alumni Interview">
+      <h3>🎓 Interview – UPPA Alumni</h3>
+      <p>
+        An interview conducted by UPPA Alumni about my academic journey, research in numerical analysis,
+        and my role as an ATER within the EDENE program.
+      </p>
+      <span class="feature-link">Read the article →</span>
+    </a>
+
+    <!-- BLOCK 2 : PhD Thesis -->
+    <a class="feature-item" href="https://theses.hal.science/tel-05018610v1" target="_blank">
+      <img src="../assets/images/thesis_illustration.png" alt="PhD Thesis - Mathematics">
+      <h3>🎓 PhD Thesis – Conservative Flux Reconstruction</h3>
+      <p>
+        PhD in Applied Mathematics, UPPA – LMAP (2021–2024).
+        Conservative numerical flux reconstruction for an interface problem and application to a posteriori error
+        analysis.
+      </p>
+      <span class="feature-link">Read the thesis →</span>
+    </a>
+  </div>
+
+  <script src="../assets/scripts/lang-switch.js?v=1"></script>
+
+</body>
+
+</html>
