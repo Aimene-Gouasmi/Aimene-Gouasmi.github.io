@@ -1,0 +1,325 @@
+/* ======== BANNIÈRE REPORTAGE MODERNE ======== */
+
+.alumni-banner {
+  display: flex;
+  width: 100%;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  margin: 30px 0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.alumni-banner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.28);
+}
+
+.banner-left {
+  flex: 1.1;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(
+      to right,
+      var(--c1) 0%,
+      var(--c1) 55%,
+      rgba(0,0,0,0) 100%
+  );
+}
+
+.banner-left h3 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.banner-left p {
+  margin: 0 0 14px;
+  max-width: 480px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.banner-link {
+  font-weight: 600;
+  opacity: 0.95;
+  font-size: 1.05rem;
+}
+
+.banner-right {
+  flex: 1;
+  position: relative;
+}
+
+.banner-right img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 900px) {
+  .alumni-banner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .banner-left {
+    padding: 24px;
+    background: linear-gradient(
+      to bottom,
+      var(--c1) 0%, 
+      var(--c1) 65%, 
+      rgba(0,0,0,0) 100%
+    );
+  }
+
+  .banner-right {
+    height: 180px;
+  }
+}
+
+/* ======== BANNIÈRE THÈSE DE DOCTORAT ======== */
+
+.thesis-banner {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 20px 0 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+  background: linear-gradient(
+    to right,
+    var(--c2) 0%,
+    var(--c1) 40%,
+    var(--c3) 100%
+  );
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.thesis-banner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.thesis-left {
+  padding: 26px 32px;
+}
+
+.thesis-left h3 {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.thesis-left p {
+  margin: 0 0 10px;
+  max-width: 650px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.thesis-link {
+  font-weight: 600;
+  font-size: 1.05rem;
+  opacity: 0.97;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+  .thesis-left {
+    padding: 18px 20px;
+  }
+
+  .thesis-left h3 {
+    font-size: 1.2rem;
+  }
+
+  .thesis-left p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Container */
+.panel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+/* Panneaux animés */
+.panel {
+  position: absolute;
+  inset: 0;
+  transition: transform 0.6s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* panneau visible */
+.panel.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
+  transform: translateX(0);
+}
+
+/* panneau à droite (sortie) */
+.panel.exit-right {
+  transform: translateX(120%);
+}
+
+/* panneau à gauche (entrée) */
+.panel.enter-left {
+  transform: translateX(-120%);
+}
+
+/* Boutons */
+.panel-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.panel-buttons button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: var(--c1);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.panel-buttons button:hover {
+  background: var(--c2);
+}
+
+/* ===== SLIDER ENTRE REPORTAGE & THESE ===== */
+/* ===== SLIDER CONTAINER ===== */
+/* ===== SLIDER CONTAINER ===== */
+
+.feature-slider {
+  position: relative;
+  width: 100%;
+  margin: 25px 0 10px;
+  overflow: hidden;
+}
+
+/* base state: all slides hidden, stacked */
+.feature-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  pointer-events: none;
+}
+
+/* slide visible */
+.feature-slide.is-current {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* 🔐 fallback: si JS ne tourne pas, on montre quand même le 1er slide */
+.feature-slide:first-child {
+  position: relative;
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* hauteur des bannières (desktop) */
+.feature-slider .alumni-banner,
+.feature-slider .thesis-banner {
+  height: 260px;
+}
+/* ===== BIG OVERLAY ARROWS FOR SLIDER ===== */
+
+.feature-slider {
+  position: relative; /* important for absolute arrows */
+}
+
+/* base style for both arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(0, 0, 0, 0.45);
+  color: #ffffff;
+  font-size: 2.2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+  z-index: 10;
+}
+
+/* left & right positions */
+.slider-arrow-left {
+  left: 14px;
+}
+
+.slider-arrow-right {
+  right: 14px;
+}
+
+/* hover effect on desktop: show arrows */
+.feature-slider:hover .slider-arrow {
+  opacity: 1;
+}
+
+/* click feedback */
+.slider-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+  background: rgba(0, 0, 0, 0.65);
+}
+
+/* MOBILE: no hover → arrows always visible and big tap area */
+@media (max-width: 900px) {
+  .slider-arrow {
+    opacity: 0.95;
+    width: 56px;
+    height: 56px;
+    font-size: 2.4rem;
+  }
+
+  .feature-slider:hover .slider-arrow {
+    opacity: 0.95;
+  }
+}
+
+/* mobile: hauteur auto */
+@media (max-width: 900px) {
+  .feature-slider .alumni-banner,
+  .feature-slider .thesis-banner {
+    height: auto;
+  }
+
+  .feature-slider {
+    margin-top: 18px;
+  }
+}
