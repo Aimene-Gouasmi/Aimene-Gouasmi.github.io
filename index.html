@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Aimene Gouasmi – Homepage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/banner.css">
+  <meta name="description"
+    content="Site personnel de Aimene Gouasmi, Docteur en Mathématiques Appliquées et ATER à l'université de Pau. Recherche en analyse numérique des EDP.">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="left-icons">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/agouasmi/" target="_blank" class="icon">
+        <img src="assets/icons/Linkedin.svg" alt="LinkedIn">
+      </a>
+
+      <!-- ResearchGate -->
+      <a href="https://www.researchgate.net/profile/Aimene-Gouasmi" target="_blank" class="icon">
+        <img src="assets/icons/Researchgate.svg" alt="ResearchGate">
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/Aimene-Gouasmi" target="_blank" class="icon">
+        <img src="assets/icons/Github.svg" alt="GitHub">
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:aimene.gouasmi@univ-pau.fr" class="icon"><img src="assets/icons/Email.svg" alt="Email"></a>
+    </div>
+
+
+    <nav class="nav">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="cv.html">CV</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Conférences</a>
+      <a href="teaching.html">Enseignement</a>
+    </nav>
+    <!-- bloc à droite : menu + recherche -->
+    <div class="right-search">
+      <!-- language switch -->
+      <button class="lang-btn" type="button" onclick="switchLang()">
+        EN
+      </button>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- Freepik style background -->
+  <div class="bg-stripes">
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+  </div>
+
+
+  <!-- Main Hero Card -->
+  <div class="main-card">
+    <div class="photo-box">
+      <img src="Aimene.jpeg" alt="Aimene Gouasmi">
+    </div>
+
+    <h1>Aimene Gouasmi</h1>
+    <h3>Docteur en Mathématiques Appliquées </h3>
+
+    <p>
+      Je suis actuellement en ATER à l'université de Pau. Ma recherche porte sur les thématiques suivantes :
+    </p>
+    <div class="research-tags">
+      <span class="tag">Analyse numérique des EDP</span>
+      <span class="tag">Méthode d'élément fini</span>
+      <span class="tag">Problèmes d'interface</span>
+      <span class="tag">Reconstruction locale de Flux</span>
+      <span class="tag">Analyse d'erreur a posteriori</span>
+      <span class="tag">CutFEM</span>
+      <span class="tag">Méthodes des frontières immergées</span>
+    </div>
+
+
+
+    <a class="contact-btn" href="mailto:aimene.gouasmi@univ-pau.fr">
+      ✉️ Me contacter
+    </a>
+
+
+  </div>
+
+
+
+
+  <div class="feature-grid">
+    <!-- BLOCK 1 : Reportage -->
+    <a class="feature-item"
+      href="https://alumni.univ-pau.fr/fr/article/aimene-gouasmi-attache-temporaire-d-enseignement-et-de-recherche-ater-a-l-uppa-alumni-edene-cohort-1/09/09/2025/376"
+      target="_blank">
+      <img src="assets/images/alumni_interview.png" alt="Interview UPPA Alumni">
+      <h3>🎓 Interview – UPPA Alumni</h3>
+      <p>
+        Reportage réalisé par UPPA Alumni sur mon parcours, ma recherche en analyse numérique
+        et mon rôle d’ATER dans le programme EDENE.
+      </p>
+      <span class="feature-link">Lire le reportage →</span>
+    </a>
+
+    <!-- BLOCK 2 : Thèse -->
+    <a class="feature-item" href="https://theses.hal.science/tel-05018610v1" target="_blank">
+      <img src="assets/images/thesis_illustration.png" alt="Thèse Mathématiques">
+      <h3>🎓 Thèse : Reconstruction de flux</h3>
+      <p>
+        Doctorat en mathématiques appliquées, UPPA – LMAP (2021–2024).
+        Numerical flux reconstruction for an interface problem and application to a posteriori error analysis.
+      </p>
+      <span class="feature-link">Lire la thèse →</span>
+    </a>
+  </div>
+
+  <script src="assets/scripts/lang-switch.js?v=1"></script>
+</body>
+
+</html>
